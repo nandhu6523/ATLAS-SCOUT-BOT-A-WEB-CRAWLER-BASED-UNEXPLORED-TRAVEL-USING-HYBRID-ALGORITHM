@@ -1,1 +1,3 @@
-List of  images
+Architecture Diagram
+Output 1: User Input Interface
+Output 2: Travel Recommendation Results
