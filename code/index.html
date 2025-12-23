@@ -1,10 +1,29 @@
+<!DOCTYPE html>
 <html>
-  <head>
-    <title>
-      My Project
-    </title>
-  </head>
-  <body>
-    <h1> My Project </h1>
-  </body>
+<head>
+    <title>ATLAS Scout Bot</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<h2>A WEB CRAWLER BASED UNEXPLORED TRAVEL USING HYBRID ALGORITHM</h2>
+
+<form method="POST">
+    <input type="text" name="city" placeholder="Enter City" required>
+    <input type="number" name="limit" placeholder="No. of places" required>
+    <button type="submit">Get Recommendations</button>
+</form>
+
+<div class="results">
+    {% for place in results %}
+    <div class="card">
+        <h3>{{ place.name }}</h3>
+        <p>Category: {{ place.category }}</p>
+        <p>Season: {{ place.season }}</p>
+        <p>Open: {{ place.open }}</p>
+    </div>
+    {% endfor %}
+</div>
+
+</body>
 </html>
